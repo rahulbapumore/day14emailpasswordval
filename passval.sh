@@ -28,3 +28,14 @@ else
   echo "Invalid email address";
 fi
 
+
+
+read -p "Enter Mobile number" mob
+mobpat="^[0-9]{2}[[:space:]][0-9]{10}$";
+if [[ $mob =~ $mobpat   ]]
+then
+  echo "Valid mobile number";
+else
+  echo "Invalid mobile number";
+fi
+
