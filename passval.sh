@@ -1,7 +1,7 @@
 #! /bin/bash
 
 read -p "Enter first name" fname
-fnamepat="^[A-Z]([a-z][a-z])+$";
+fnamepat="^[A-Z][a-z][a-z]+$";
 if [[ $fname =~ $fnamepat   ]]
 then
   echo "Valid first name";
@@ -11,7 +11,7 @@ fi
 
 
 read -p "Enter Last name" lname
-lnamepat="^[A-Z]([a-z][a-z])+$"";
+lnamepat="^[A-Z][a-z][a-z]+$";
 if [[ $lname =~ $lnamepat   ]]
 then
   echo "Valid last name";
